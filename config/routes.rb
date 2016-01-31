@@ -4,11 +4,11 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-	
-	resources :users, only: [:index, :create, :update, :show]
-	
-	get '/users/:user_id/leaderboard' => 'scores#user_leaderboard'
-	get '/leaderboard' => 'scores#global_leaderboard'	
+
+  resources :users, only: [:index, :create, :update, :show]
+
+  get '/users/:user_id/leaderboard' => 'scores#user_leaderboard'
+  get '/leaderboard' => 'scores#global_leaderboard'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
